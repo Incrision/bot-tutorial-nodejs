@@ -21,9 +21,9 @@ function respond() {
     this.res.end(); //closes the header 
   } else if(request.text && coinflip.test(request.text)){
     this.res.writeHead(200); //starts the header
-    if((Math.floor(Math.random() * Math.floor(2)) == 0);
-      postMessage(66);
-    else
+    //if((Math.floor(Math.random() * Math.floor(2)) == 0);
+      //postMessage(66);
+    //else
       postMessage(67);
     this.res.end(); //closes the header 
   } else {
