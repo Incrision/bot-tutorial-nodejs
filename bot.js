@@ -32,7 +32,7 @@ function postMessage(txt) {
   
   if (txt.test(request.opt1))
     botResponse = 'dun for sun';
-  else if(txt.test(request.opt1))
+  else if(txt.test(request.opt2))
     botResponse = cool();
   
   options = {
