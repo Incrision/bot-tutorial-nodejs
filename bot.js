@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/ran$/; //random emote keyword 
+      botRegex = /^\/Dye #$/; //random emote keyword 
       botRegex2 = /^\/randos$/;
   //checking if user message matchesany keyword 
   if(request.text && botRegex.test(request.text)) { 
@@ -31,7 +31,7 @@ function postMessage(txt) {
   
   
   if (txt == opt1)
-    botResponse = 'dun for sun';
+    botResponse = 'Dye: 7024974714 \n *Beepo Boop*';
   else if(txt == opt2)
     botResponse = cool();
   else
