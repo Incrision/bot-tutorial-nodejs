@@ -18,7 +18,6 @@ function respond() {
   name10 = /^\/Krysinksi #$/;
   name11 = /^\/Trivitt #$/;
   name12 = /^\/Merker #$/;
-  coin = /^\/flip coin$/;
   
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -71,13 +70,6 @@ function respond() {
   } else if (request.text && name12.test(request.text)) {
     this.res.writeHead(200);
     postMessage(12);
-    this.res.end(); 
-  } else if (request.text && coin.test(request.text)) {
-    this.res.writeHead(200);
-    if(Math.floor(Math.random() * Math.floor(3)) < 1)
-      postMessage(91);
-    else
-      postMessage(92);
     this.res.end();   
   } else {
     console.log("don't care");
@@ -115,10 +107,6 @@ function postMessage(num) {
     botResponse = 'Trivitt: 7752302891';
   else if(num == 12)
     botResponse = 'Merker: 7025266518';
-  else if (num = 91)
-    botResponse = 'heads';
-  else if(num == 92)
-    botResponse = 'tails';
   
   if(num < 90)
     botResponse += '\n\n*beep boop*';
