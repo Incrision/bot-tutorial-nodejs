@@ -31,43 +31,43 @@ function respond() {
     this.res.writeHead(200);
     postMessage(2);
     this.res.end();
-  } else if (request.text && name2.test(request.text)) {
+  } else if (request.text && name3.test(request.text)) {
     this.res.writeHead(200);
     postMessage(3);
     this.res.end();
-  } else if (request.text && name2.test(request.text)) {
+  } else if (request.text && name4.test(request.text)) {
     this.res.writeHead(200);
     postMessage(4);
     this.res.end();
-  } else if (request.text && name2.test(request.text)) {
+  } else if (request.text && name5.test(request.text)) {
     this.res.writeHead(200);
     postMessage(5);
     this.res.end();
-  } else if (request.text && name2.test(request.text)) {
+  } else if (request.text && name6.test(request.text)) {
     this.res.writeHead(200);
     postMessage(6);
     this.res.end();
-  } else if (request.text && name2.test(request.text)) {
+  } else if (request.text && name7.test(request.text)) {
     this.res.writeHead(200);
     postMessage(7);
     this.res.end();
-  } else if (request.text && name2.test(request.text)) {
+  } else if (request.text && name8.test(request.text)) {
     this.res.writeHead(200);
     postMessage(8);
     this.res.end();
-  } else if (request.text && name2.test(request.text)) {
+  } else if (request.text && name9.test(request.text)) {
     this.res.writeHead(200);
     postMessage(9);
     this.res.end();
-  } else if (request.text && name2.test(request.text)) {
+  } else if (request.text && name10.test(request.text)) {
     this.res.writeHead(200);
     postMessage(10);
     this.res.end();
-  } else if (request.text && name2.test(request.text)) {
+  } else if (request.text && name11.test(request.text)) {
     this.res.writeHead(200);
     postMessage(11);
     this.res.end();
-  } else if (request.text && name2.test(request.text)) {
+  } else if (request.text && name12.test(request.text)) {
     this.res.writeHead(200);
     postMessage(12);
     this.res.end();  
