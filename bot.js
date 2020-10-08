@@ -6,8 +6,19 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/thanks$/;
-      name1 = /^\/Dye #$/;
-
+  name1 = /^\/Dye #$/;
+  name2 = /^\/Terry #$/;
+  name3 = /^\/Pendleton #$/;
+  name4 = /^\/Phillips #$/;
+  name5 = /^\/Jaeck #$/;
+  name6 = /^\/Chavez #$/;
+  name7 = /^\/Baughman #$/;
+  name8 = /^\/Iverson #$/;
+  name9 = /^\/Ramos #$/;
+  name10 = /^\/Krysinksi #$/;
+  name11 = /^\/Trivitt #$/;
+  name12 = /^\/Merker #$/;
+  
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage(99);
