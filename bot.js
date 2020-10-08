@@ -5,8 +5,8 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/rando$/; //random emote keyword 
-  
+      botRegex = /^\/ran$/; //random emote keyword 
+      botRegex2 = /^\/randos$/;
   //checking if user message matchesany keyword 
   if(request.text && botRegex.test(request.text)) { 
     this.res.writeHead(200); //starts the header
