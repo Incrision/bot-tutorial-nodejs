@@ -74,7 +74,10 @@ function respond() {
     this.res.end(); 
   } else if (request.text && coin.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(91);
+    if(Math.floor(Math.random() * Math.floor(max)) == 0)
+      postMessage(91);
+    else
+      postMessage(92);
     this.res.end();   
   } else {
     console.log("don't care");
@@ -114,6 +117,8 @@ function postMessage(num) {
     botResponse = 'Merker: 7025266518';
   else if (num = 91)
     botResponse = 'heads';
+  else if(num == 92)
+    botResponse = 'tails';
   
   if(num < 90)
     botResponse += '\n\n*beep boop*';
