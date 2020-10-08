@@ -12,6 +12,10 @@ function respond() {
     this.res.writeHead(200);
     postMessage(99);
     this.res.end();
+  } else if (request.text && name1.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(1);
+    this.res.end();
   } else {
     console.log("don't care");
     this.res.writeHead(200);
@@ -23,7 +27,9 @@ function postMessage(num) {
   var botResponse, options, body, botReq;
   
   if(num == 99)
-  botResponse = cool();
+    botResponse = cool();
+  else if(num == 1)
+    botResponse = 'Dye: 7024974714';
 
   options = {
     hostname: 'api.groupme.com',
