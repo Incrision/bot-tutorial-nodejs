@@ -74,7 +74,7 @@ function respond() {
     this.res.end(); 
   } else if (request.text && coin.test(request.text)) {
     this.res.writeHead(200);
-    if(Math.floor(Math.random() * Math.floor(2)) == 0)
+    if(Math.floor(Math.random() * Math.floor(3)) < 1)
       postMessage(91);
     else
       postMessage(92);
