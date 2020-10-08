@@ -31,6 +31,46 @@ function respond() {
     this.res.writeHead(200);
     postMessage(2);
     this.res.end();
+  } else if (request.text && name2.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(3);
+    this.res.end();
+  } else if (request.text && name2.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(4);
+    this.res.end();
+  } else if (request.text && name2.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(5);
+    this.res.end();
+  } else if (request.text && name2.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(6);
+    this.res.end();
+  } else if (request.text && name2.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(7);
+    this.res.end();
+  } else if (request.text && name2.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(8);
+    this.res.end();
+  } else if (request.text && name2.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(9);
+    this.res.end();
+  } else if (request.text && name2.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(10);
+    this.res.end();
+  } else if (request.text && name2.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(11);
+    this.res.end();
+  } else if (request.text && name2.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(12);
+    this.res.end();  
   } else {
     console.log("don't care");
     this.res.writeHead(200);
@@ -46,7 +86,28 @@ function postMessage(num) {
   else if(num == 1)
     botResponse = 'Dye: 7024974714';
   else if(num == 2)
-    botResponse = 'Terry: 7024974714';
+    botResponse = 'Terry: 7757425829';
+  else if(num == 3)
+    botResponse = 'Pendleton: 7025927322';
+  else if(num == 4)
+    botResponse = 'Phillips: 9704268767';
+  else if(num == 5)
+    botResponse = 'Jaeck: 7753035789';
+  else if(num == 6)
+    botResponse = 'Chavez: 7028852449';
+  else if(num == 7)
+    botResponse = 'Baughman: 7754345537';
+  else if(num == 8)
+    botResponse = 'Iverson: 7753158902';
+  else if(num == 9)
+    botResponse = 'Ramos: 7754344991';
+  else if(num == 10)
+    botResponse = 'Krysinksi: 7755153029';
+  else if(num == 11)
+    botResponse = 'Trivitt: 7752302891';
+  else if(num == 12)
+    botResponse = 'Merker: 7025266518';
+  
   
   options = {
     hostname: 'api.groupme.com',
