@@ -8,9 +8,14 @@ function respond() {
       botRegex = /^\/ran$/; //random emote keyword 
       botRegex2 = /^\/randos$/;
   //checking if user message matchesany keyword 
-  if(request.text && botRegex2.test(request.text)) { 
+  if(request.text && botRegex.test(request.text)) { 
     this.res.writeHead(200); //starts the header
-    postMessage();
+    postMessage('1');
+    this.res.end(); //closes the header 
+  }else if(request.text && botRegex2.test(request.text)) 
+  {
+    this.res.writeHead(200); //starts the header
+    postMessage('2');
     this.res.end(); //closes the header 
   } else {
     console.log("don't care");
@@ -19,7 +24,7 @@ function respond() {
   }
 }
 
-function postMessage() {
+function postMessage(var) {
   var botResponse, options, body, botReq;
 
   //botResponse = cool();
