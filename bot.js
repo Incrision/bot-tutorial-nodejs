@@ -26,9 +26,14 @@ function respond() {
 
 function postMessage(txt) {
   var botResponse, options, body, botReq;
-
-  //botResponse = cool();
-  botResponse = 'dun for sun';
+  var opt1 = '1';
+  var opt2 = '2';
+  
+  
+  if (txt.test(request.opt1))
+    botResponse = 'dun for sun';
+  else if(txt.test(request.opt1))
+    botResponse = cool();
   
   options = {
     hostname: 'api.groupme.com',
