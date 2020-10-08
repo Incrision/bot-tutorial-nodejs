@@ -15,22 +15,18 @@ function respond() {
     this.res.writeHead(200); //starts the header
     postMessage(1);
     this.res.end(); //closes the header 
-  }
-  else if(request.text && botRegex2.test(request.text)){
+  } else if(request.text && botRegex2.test(request.text)){
     this.res.writeHead(200); //starts the header
     postMessage(2);
     this.res.end(); //closes the header 
-  } 
-  else if(request.text && coinflip.test(request.text)){
+  } else if(request.text && coinflip.test(request.text)){
     this.res.writeHead(200); //starts the header
-    if(Math.floor(Math.random() * Math.floor(2) == 0);
+    if((Math.floor(Math.random() * Math.floor(2)) == 0);
       postMessage(66);
     else
       postMessage(67);
-    
     this.res.end(); //closes the header 
-  } 
-  else {
+  } else {
     console.log("don't care");
     this.res.writeHead(200);
     this.res.end();
