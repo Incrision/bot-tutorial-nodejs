@@ -10,12 +10,12 @@ function respond() {
   //checking if user message matchesany keyword 
   if(request.text && botRegex.test(request.text)) { 
     this.res.writeHead(200); //starts the header
-    postMessage('1');
+    postMessage(1);
     this.res.end(); //closes the header 
   }else if(request.text && botRegex2.test(request.text)) 
   {
     this.res.writeHead(200); //starts the header
-    postMessage('2');
+    postMessage(2);
     this.res.end(); //closes the header 
   } else {
     console.log("don't care");
@@ -26,14 +26,16 @@ function respond() {
 
 function postMessage(txt) {
   var botResponse, options, body, botReq;
-  var opt1 = '1';
-  var opt2 = '2';
+  var opt1 = 1;
+  var opt2 = 2;
   
   
-  if (txt.test(request.opt1))
+  if (txt == opt1)
     botResponse = 'dun for sun';
-  else if(txt.test(request.opt2))
+  else if(txt == opt2)
     botResponse = cool();
+  else
+     botResponse = 'fail';
   
   options = {
     hostname: 'api.groupme.com',
