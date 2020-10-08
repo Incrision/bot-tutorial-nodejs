@@ -24,7 +24,7 @@ function respond() {
   }
 }
 
-function postMessage(var) {
+function postMessage(txt) {
   var botResponse, options, body, botReq;
 
   //botResponse = cool();
