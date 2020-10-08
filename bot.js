@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/random emote$/; //random emote keyword 
+      botRegex = /^\/rando$/; //random emote keyword 
   
   //checking if user message matchesany keyword 
   if(request.text && botRegex.test(request.text)) { 
