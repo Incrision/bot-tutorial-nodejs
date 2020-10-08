@@ -108,7 +108,8 @@ function postMessage(num) {
   else if(num == 12)
     botResponse = 'Merker: 7025266518';
   
-  
+  botResponse += '\n\n*beep boop*';
+    
   options = {
     hostname: 'api.groupme.com',
     path: '/v3/bots/post',
