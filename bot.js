@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/ran$/; //random emote keyword 
       botRegex2 = /^\/randos$/;
   //checking if user message matchesany keyword 
-  if(request.text && botRegex.test(request.text)) { 
+  if(request.text && botRegex2.test(request.text)) { 
     this.res.writeHead(200); //starts the header
     postMessage();
     this.res.end(); //closes the header 
