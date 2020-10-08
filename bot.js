@@ -5,12 +5,13 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/random emote$/;
-
-  if(request.text && botRegex.test(request.text)) {
-    this.res.writeHead(200);
+      botRegex = /^\/random emote$/; //random emote keyword 
+  
+  //checking if user message matchesany keyword 
+  if(request.text && botRegex.test(request.text)) { 
+    this.res.writeHead(200); //starts the header
     postMessage();
-    this.res.end();
+    this.res.end(); //closes the header 
   } else {
     console.log("don't care");
     this.res.writeHead(200);
@@ -54,4 +55,4 @@ function postMessage() {
 }
 
 
-exports.respond = respond;
+exports.respond = respond; //listener
