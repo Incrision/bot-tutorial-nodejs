@@ -5,19 +5,19 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/thanks$/;
-  name1 = /^\/Dye #$/;
-  name2 = /^\/Terry #$/;
-  name3 = /^\/Pendleton #$/;
-  name4 = /^\/Phillips #$/;
-  name5 = /^\/Jaeck #$/;
-  name6 = /^\/Chavez #$/;
-  name7 = /^\/Baughman #$/;
-  name8 = /^\/Iverson #$/;
-  name9 = /^\/Ramos #$/;
-  name10 = /^\/Krysinksi #$/;
-  name11 = /^\/Trivitt #$/;
-  name12 = /^\/Merker #$/;
+      botRegex = /^\Thanks$/;
+  name1 = /^\Dye #$/;
+  name2 = /^\Terry #$/;
+  name3 = /^\Pendleton #$/;
+  name4 = /^\Phillips #$/;
+  name5 = /^\Jaeck #$/;
+  name6 = /^\Chavez #$/;
+  name7 = /^\Munoz #$/;
+  name8 = /^\Iverson #$/;
+  name9 = /^\Gray #$/;
+  name10 = /^\Krysinksi #$/;
+  name11 = /^\Trivitt #$/;
+  name12 = /^\Huntly #$/;
   
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -96,20 +96,19 @@ function postMessage(num) {
   else if(num == 6)
     botResponse = 'Chavez: 7028852449';
   else if(num == 7)
-    botResponse = 'Baughman: 7754345537';
+    botResponse = 'Baughman: 9259150611';
   else if(num == 8)
     botResponse = 'Iverson: 7753158902';
   else if(num == 9)
-    botResponse = 'Ramos: 7754344991';
+    botResponse = 'Ramos: 7757209151';
   else if(num == 10)
     botResponse = 'Krysinksi: 7755153029';
   else if(num == 11)
     botResponse = 'Trivitt: 7752302891';
   else if(num == 12)
-    botResponse = 'Merker: 7025266518';
+    botResponse = 'Huntly: 7022783701';
   
-  if(num < 90)
-    botResponse += '\n\n*beep boop*';
+  botResponse += '\n\n*beep boop*';
     
   options = {
     hostname: 'api.groupme.com',
