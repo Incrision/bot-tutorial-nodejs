@@ -96,7 +96,7 @@ function postMessage(num) {
   else if(num == 6)
     botResponse = 'Chavez: 7028852449';
   else if(num == 7)
-    botResponse = 'Baughman: 9259150611';
+    botResponse = 'Munoz: 9259150611';
   else if(num == 8)
     botResponse = 'Iverson: 7753158902';
   else if(num == 9)
