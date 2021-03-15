@@ -9,7 +9,7 @@ function respond() {
   name1 = /^\Dye #$/;
   name2 = /^\Terry #$/;
   name3 = /^\Pendleton #$/;
-  name4 = /^\Phillips #$/;
+  name4 = /^\Higa #$/;
   name5 = /^\Jaeck #$/;
   name6 = /^\Chavez #$/;
   name7 = /^\Munoz #$/;
@@ -90,7 +90,7 @@ function postMessage(num) {
   else if(num == 3)
     botResponse = 'Pendleton: 7025927322';
   else if(num == 4)
-    botResponse = 'Phillips: 9704268767';
+    botResponse = 'Higa: 7025402307';
   else if(num == 5)
     botResponse = 'Jaeck: 7753035789';
   else if(num == 6)
